@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "autoanswer",
+	"version": "${version}",
+	"name": "AutoAnswer",
+	"description": "This is an Auto Answer mod.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/autoanswer/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.amir.autoanswer.AutoAnswer"
+		],
+		"client": [
+			"net.amir.autoanswer.AutoAnswerClient"
+		],
+		"fabric-datagen": [
+			"net.amir.autoanswer.AutoAnswerDataGenerator"
+		]
+	},
+	"mixins": [
+		"autoanswer.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
